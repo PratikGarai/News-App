@@ -19,6 +19,7 @@ const NewsList = (props) =>
             console.log(err);
         })
     }, []);
+    
     return(
         <div className="news-list">
             {[components]}
