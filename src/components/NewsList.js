@@ -3,11 +3,25 @@ import NewsCard from './NewsCard';
 
 const NewsList = (props) =>
 {
-    const newslist = useState([]);
-    const components = newslist.map(news => <NewsCard id={news.id} news={news} />);
+    const [list, setList] = useState([]);
+    const components = list.map(news => <NewsCard id={news.id} news={news} />);
+
+    useEffect( ()=>
+    {
+        fetch("http://localhost:8000/news/articles/?format=json")
+        .then(res => res.json())
+        .then(res =>{
+            const resp = res;
+            setList(resp);
+            console.log(list);
+        })
+        .catch(err=>{
+            console.log(err);
+        })
+    }, []);
     return(
-        <div class="news-list">
-            [components]
+        <div className="news-list">
+            {[components]}
         </div>
     );
 }
