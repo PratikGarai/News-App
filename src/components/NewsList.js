@@ -13,13 +13,12 @@ const NewsList = (props) =>
         .then(res =>{
             const resp = res;
             setList(resp);
-            console.log(list);
         })
         .catch(err=>{
             console.log(err);
         })
     }, []);
-    
+
     return(
         <div className="news-list">
             {[components]}
