@@ -1,3 +1,8 @@
+.news-list{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .news-card{
     margin: 20px; 
     border: 3px solid;
@@ -42,6 +47,6 @@
 }
 
 .news-card-image img{
-    max-width : 100%;
+    width : 100%;
     object-fit: cover;
 }

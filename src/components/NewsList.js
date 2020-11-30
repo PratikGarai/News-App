@@ -21,7 +21,7 @@ const NewsList = (props) =>
     }, []);
 
     return(
-        <div className="news-list row">
+        <div className="news-list row justify-content-center">
             {[components]}
         </div>
     );
