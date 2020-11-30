@@ -1,11 +1,11 @@
-import React,  {useState, useEffect} from 'react';
+import React,{useState, useEffect} from 'react';
 import NewsCard from './NewsCard';
 import '../css/News.css';
 
 const NewsList = (props) =>
 {
     const [list, setList] = useState([]);
-    const components = list.map(news => <NewsCard id={news.id} news={news} />);
+    const components = list.map(news => <NewsCard key={news.id} news={news} />);
 
     useEffect( ()=>
     {
