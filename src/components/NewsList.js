@@ -1,5 +1,6 @@
 import React,  {useState, useEffect} from 'react';
 import NewsCard from './NewsCard';
+import '../css/News.css';
 
 const NewsList = (props) =>
 {
@@ -20,7 +21,7 @@ const NewsList = (props) =>
     }, []);
 
     return(
-        <div className="news-list">
+        <div className="news-list row">
             {[components]}
         </div>
     );
