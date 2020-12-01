@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
+import '../css/Detail.css';
 
 const NewsDetail = (props) =>
 {
@@ -24,26 +25,33 @@ const NewsDetail = (props) =>
     }
     else{
         return (
-            <div className="deatil-page">
-                <div className="deatil-head">
-                    <h1>{article.title}</h1>
-                </div>   
-                <div className="detail-sidepane">
-                    <h2>Written By :</h2>
-                    <hr />
-                    <div className="detail-author">
-                        <span className="detail-author-name">
-                            {article.author}
-                        </span>
-                        <span className="detail-date">
-                            {article.published.substring(0,10)+" "+article.published.substring(11,16)}
-                        </span>
+            <React.Fragment>
+                <div className="image-div">
+                    <img className="article-image" src={article.imageUrl} alt="article cover"></img>
+                </div>
+                <div className="detail-page">
+                    <div className="detail-sidepane">
+                        <h2>Written By :</h2>
+                        <hr />
+                        <div className="detail-author">
+                            <span className="detail-author-name">
+                                {article.author}
+                            </span>
+                            <br />
+                            <span className="detail-date">
+                                {article.published.substring(0,10)+" "+article.published.substring(11,16)}
+                            </span>
+                        </div>
                     </div>
+                    <div className="detail-head">
+                        <h1>{article.title}</h1>
+                    </div>   
                     <div className="article-content">
+                    <hr />
                         {article.content}
                     </div>
-                </div>
-            </div> 
+                </div> 
+            </React.Fragment>
         );
     }
 } 

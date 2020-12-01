@@ -1,0 +1,39 @@
+.detail-sidepane
+{
+    float : right;
+    height : 100%;
+    width : 20%;
+    border-left : 1px solid grey;
+    padding : 30px;
+}
+
+.article-content
+{
+    max-width : 70%;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.detail-page{
+    margin-top : 50px;
+    margin-bottom : 100px;
+    padding-left : 30px;
+    padding-right : 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+
+.article-image
+{
+    width : 100%;
+    border-radius: 10px;
+}
+
+.image-div
+{
+    width : 80%;
+    margin : auto;
+    margin-top : 30px;
+}
