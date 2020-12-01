@@ -11,10 +11,10 @@ const Header = (props) =>{
             <Router>
                 <nav>
                     <ul>
-                        <li><Link to="">
+                        <li><Link style={{ textDecoration: 'none' }} to="">
                             <span className="links"><strong>Home</strong></span>
                         </Link></li>
-                        <li><Link to="/about">
+                        <li><Link style={{ textDecoration: 'none' }} to="/about">
                             <span className="links"><strong>About</strong></span>
                         </Link></li>
                     </ul>

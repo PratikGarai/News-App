@@ -18,13 +18,11 @@
     padding-bottom: 5%;
     padding-left: 10%;
     padding-right: 10%;
+    color: rgb(58, 58, 58);
 }
 
 .news-card:hover{
     transform : scale(1.05);
-}
-
-.news-divider{
 }
 
 .news-title
@@ -49,4 +47,8 @@
 .news-card-image img{
     width : 100%;
     object-fit: cover;
+}
+
+.news-card a{
+    text-decoration : none;
 }
