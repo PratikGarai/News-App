@@ -1,11 +1,12 @@
 import './css/App.css';
-import NewsList from './components/NewsList';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Footer />
     </div>
   );
 }
